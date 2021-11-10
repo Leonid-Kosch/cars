@@ -1,0 +1,105 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+nav {
+    height: 64px;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+header {
+    height: 100vh;
+    min-height: 560px;
+    max-height: 3376px;
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.nav__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 16px;
+    transition: all 0.3s;
+}
+.nav__links a:hover {
+    text-shadow: 0 0 10px white;
+}
+.phone {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.3s;
+}
+.phone:hover {
+    text-shadow: 0 0 10px white;
+}
+.instagram {
+    font-size: 30px;
+    color:white;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.instagram:hover {
+    transform: scale(0.9);
+}
+.nav__contant {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+   height: 20px;
+   width: 40px;
+   background:transparent; 
+   position: relative;
+   display: none;
+}
+.hamburger span {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    position:absolute;
+    transition: all 0.3s;
+}
+.hamburger span:nth-child(1) {
+    top:0;
+    right: 0;
+}
+.hamburger span:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -1px);
+}
+.hamburger span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+}
+.hamburger_active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8.8px;
+}
+.hamburger_active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger_active span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 8.8px;
+}
+.scroll_none {
+    overflow-y: hidden;
+}
